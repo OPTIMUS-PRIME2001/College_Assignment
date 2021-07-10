@@ -63,25 +63,21 @@ Node *ADD_Same_Size(Node*, Node*,Node*,int*)
 */
 Node *ADD_Same_Size(Node*, Node*, Node*,int*);
 
-/*
-Function under <LargeDatatype.h> to Add carry to the remaining part of larger list
+/*Function under <LargeDatatype.h> to Add carry to the remaining part of larger list
 Node *ADD_Carry_To_Remaining(Node *H1,Node *cursorPoint,Node *s,int *carry)
 */
 Node *ADD_Carry_To_Remaining(Node*,Node*,Node*,int*);
 
-/*
-Function under <LargeDatatype> to ADD two linked list datatypes.
+/*Function under <LargeDatatype> to ADD two linked list datatypes.
 Node *ADD(Node *S1, Node *S2)
 */
 Node *ADD(Node*, Node*);
-/*
-Function under <LargeDatatype.h> to copy one linked list to another linked list.
+/*Function under <LargeDatatype.h> to copy one linked list to another linked list.
 Node *ListCopy(Node** , Node*);
 */
 Node *ListCpy(Node** , Node*);
 void numtowords(Node*,char sys[20],int,int);
-/*
-Function under <LargeDatatype.h> to print any number in words.
+/*Function under <LargeDatatype.h> to print any number in words.
 Function defination you must include
 void inwords(Node* Start)
 */
