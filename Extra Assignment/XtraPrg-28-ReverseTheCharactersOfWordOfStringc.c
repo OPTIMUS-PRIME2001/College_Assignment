@@ -3,7 +3,7 @@
      Output: I evol ot daer skoob
 */
 #include<stdio.h>
-void ReverseWords(char Str[])
+void ReverseEachWords(char Str[])
 {
     int i, j, initial, final, diff; char temp;
     if(Str[0]==' ') initial =0;
@@ -39,7 +39,7 @@ void main()
     char String[100];
     printf("\nEnter a String: ");
     scanf("%[^\n]s",&String);
-    ReverseWords(String);
+    ReverseEachWords(String);
     printf("\nThe Output is: %s",String);
     printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");  
 }      
