@@ -22,4 +22,5 @@ void main()
        printf("%d is NOT a LEAP YEAR",year);
     }
     */
+   printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
 }

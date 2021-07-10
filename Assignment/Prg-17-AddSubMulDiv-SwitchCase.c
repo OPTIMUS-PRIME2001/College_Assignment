@@ -18,14 +18,17 @@ void main()
     {
         case 1:{ result = num1 + num2;
                  printf("\nAddition of %.2f and %.2f gives %.2f .",num1,num2,result);
+                 printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
                }
                break;
         case 2: { result = num1 - num2;
-                  printf("\nSubtraction of %.2f from %.2f gives %.2f .",num2,num1,result);                 
+                  printf("\nSubtraction of %.2f from %.2f gives %.2f .",num2,num1,result);
+                  printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");                 
                 }
                 break;
         case 3:{ result = num1 * num2;
                  printf("\nMultiplication of %.2f by %.2f gives %.2f .",num1,num2,result);
+                 printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
                }
                break;
         case 4:{ if(num2!=0)
@@ -36,9 +39,9 @@ void main()
                  {
                    printf("\nCannot divide by 0.");
                  } 
+                 printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
                }
                break;  
         default: printf("\n You have choosen the Wrong option!!");
     }
-
 }

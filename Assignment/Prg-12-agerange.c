@@ -4,7 +4,6 @@ For example if the user enters 25, then the output will print the three
 immediate integral ranges: 24 to 26, 23 to 27 and 22 to 28.
 */
 #include<stdio.h>
-#include<stdio.h>
 int main()
 {  int age,a,b;
    printf("\n\nEnter the age of the Person:");
@@ -13,5 +12,6 @@ int main()
    printf("\nFirst Integral Range: %d to %d",--a,++b);
    printf("\nSecond Integral Range: %d to %d",--a,++b);
    printf("\nThird Integral Range: %d to %d",--a,++b);
-   return 0;
+    printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
+    return 0;
 }

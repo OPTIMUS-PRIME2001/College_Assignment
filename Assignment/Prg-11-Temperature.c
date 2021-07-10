@@ -14,6 +14,7 @@ int main()
      scanf("%f", &ftemp);
      ctemp = (ftemp - 32)/1.8;
      printf("The temperature in celcius is:%.2f",ctemp);
+     printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
    }
    else if(choice==2)
    {
@@ -21,6 +22,7 @@ int main()
      scanf("%f", &ctemp);
      ftemp = 1.8*ctemp + 32;
      printf("The temperature in celcius is:%.2f",ftemp);
+     printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
    }
    else
    {

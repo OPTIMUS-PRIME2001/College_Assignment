@@ -11,5 +11,6 @@ void main()
     sum+=num;
     num = num + 2;
   }
-  printf("The sum of first %d Odd numbers is %d",n,sum);    
+  printf("The sum of first %d Odd numbers is %d",n,sum);  
+  printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");  
 }

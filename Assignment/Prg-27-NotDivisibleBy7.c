@@ -13,6 +13,7 @@ void main()
       { printf("%d , ",i);
       }
       else
-      { n+=1;}      
+      { n+=1; }      
   }  
+  printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
 }

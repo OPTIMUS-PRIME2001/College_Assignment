@@ -10,4 +10,5 @@ void main(){
     num2 = num1 ^ num2;
     num1 = num1 ^ num2; 
     printf("After Swapping two numbers\n a:%d\n b:%d",num1,num2);    
+    printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
 }

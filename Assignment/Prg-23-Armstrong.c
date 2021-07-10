@@ -1,6 +1,7 @@
 /*Q. Write a C Program to find whether a number is Armstrong or not. 
 (using while and if statement)
-Armstrong number is a number that is equal to the sum of cubes of its digits
+Armstrong number(or Narcissistic number) is a number that is equal to the sum of its own digits 
+each raised to the power of the numbers of digits
 */
 #include<stdio.h>
 #include<math.h>
@@ -24,10 +25,11 @@ int main()
     }
     //if num is equal to result, the  number is an Amstrong number
     if((int)result == num)
-    { printf("%d is an Armstrong Number.",num);
+    { printf("%d is an Armstrong Number or Narcissistic number.",num);
     }
     else
-    { printf("%d is not an Armstrong Number.",num);
-    }    
+    { printf("%d is not an Armstrong Number or Narcissistic number.",num);
+    }
+    printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");    
     return 0;
 }

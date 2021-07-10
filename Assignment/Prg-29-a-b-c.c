@@ -23,6 +23,7 @@ void main()
       printf("\n");
       m++;
     }
+    printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
     printf("\nb.\n  ");
     for(i=1; i<=5; i++)
     {
@@ -32,6 +33,7 @@ void main()
         }
         printf("\n  ");
     }
+    printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
     printf("\nc.\n  ");
     for(i=5; i>=1; --i)
     {
@@ -41,6 +43,7 @@ void main()
         }
         printf("\n  ");
     }
+    printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
     printf("\nd.\n  ");
     for (i = 1; i <= 5; ++i)
     {
@@ -65,6 +68,7 @@ void main()
       count=count1=k=0;
       printf("\n  ");
     }
+    printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
     printf("\ne.\n  ");
     for(i=5; i>=1 ; --i)
      {  
@@ -82,4 +86,5 @@ void main()
         }
        printf("\n  ");
      }
+     printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
 }

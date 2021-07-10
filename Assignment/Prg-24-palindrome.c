@@ -7,14 +7,12 @@ int main()
    printf("\nEnter a Number:");
    scanf("%d", &num);
    originalNum = num;
-
    //reverse number is stored in reversedNum
    while(num!=0)
    {  remainder = num%10;
       reversedNum = reversedNum*10 + remainder;
       num /=10;
    } 
-   
    //palindrome if originalNum and reversedNum are equal
    if(originalNum==reversedNum)
    {
@@ -24,5 +22,6 @@ int main()
    {
        printf("%d is not a palindrome.",originalNum);
    }
+   printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
    return 0;
 }

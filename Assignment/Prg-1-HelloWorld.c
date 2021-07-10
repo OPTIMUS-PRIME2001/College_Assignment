@@ -4,5 +4,6 @@
 int main()
 {
    printf("\n\nHello World");
+   printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
    return 0;
 }

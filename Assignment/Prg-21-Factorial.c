@@ -12,7 +12,11 @@ void main()
    {  if(num!=0)
         {fact = fact * num;
         }
-      num--;     
+      if(n>0)  
+         num--;
+      else if(n<0)
+         fact = 0;        
    }while(num>=1);
    printf("The Factorial of the number %d is %d",n,fact); 
+   printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
 }

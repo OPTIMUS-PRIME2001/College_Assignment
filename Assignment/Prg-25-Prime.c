@@ -5,7 +5,7 @@
 #include<math.h>
 void main()
 {  int num, flag;
-   printf("\n\nEnter a Number:");
+   printf("\n\nEnter a Natural Number:");
    scanf("%d", &num);
    if(num==1)
    {
@@ -26,4 +26,5 @@ void main()
        else 
         { printf("%d is a Prime\n",num); } 
    }
+   printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
 }

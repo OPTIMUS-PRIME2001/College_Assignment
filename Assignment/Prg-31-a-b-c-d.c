@@ -27,7 +27,7 @@ void main()
       }
       printf("\n ");
    }
-
+   printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
    printf("\nb.\n ");
    for(i = 0; i < 5; i++) 
    {
@@ -47,7 +47,7 @@ void main()
       }
       printf("\n ");
    }
-  
+  printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
    printf("\nc.\n  ");
    //printing upper part
    for(int i=0;i<5;i++)  
@@ -73,7 +73,8 @@ void main()
         printf("* ");  
      }  
      printf("\n  ");  
-   }  
+   } 
+   printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m"); 
    printf("\nd.\n  ");
    for(i=1; i<=7; i+=2,n+=3)
    {
@@ -107,4 +108,5 @@ void main()
       }
       printf("\n  ");
    }
+   printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
 }

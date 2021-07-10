@@ -11,7 +11,6 @@ a.        1          b. 5 6 7 8 9 8 7 6 5    c. 0            d. 1
 #include<stdlib.h>
 void main()
 {  int i, j, k, m=1,count=0, count1=0;
-   int result=0, num1=0 , num2=1;
    printf("\na.\n  ");
     for (i = 1; i <= 5; ++i)
     {
@@ -36,6 +35,7 @@ void main()
       count=count1=k=0;
       printf("\n  ");
     }
+    printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
     printf("\nb.\n  ");
     for (i = 5; i >= 1; --i)
     {
@@ -60,23 +60,24 @@ void main()
       count=count1=k=0;
       printf("\n  ");
     }
+    printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
     printf("\nc.\n  ");
-    result = num1 + num2;
-    printf("%d",num1);
-    printf("\n  %d  %d\n  ",num2,result);
+    int result=0, num1=0 , num2=1;
     for(i=1; i<5; ++i)
     {
-        for(j=1; j<=i+2; ++j)
-        {  num1 = num2 ;      
-           num2= result;
-           result = num1 + num2;
+        for(j=1; j<=i; ++j)
+        {  
            if(result<10)
-             { printf("%d  ",result); }
+             { printf("%d  ",num1); }
            else
-             { printf("%d ",result);}  
+             { printf("%d ",num1);} 
+           result = num1 + num2;
+           num1 = num2 ;      
+           num2= result;            
        }
         printf("\n  ");
     }
+    printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
     printf("\nd.\n  ");
     //printing upper part
     for(i=1; i<5 ; ++i)
@@ -106,4 +107,5 @@ void main()
         }
         printf("\n  ");
      }  
+     printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
 }

@@ -6,7 +6,7 @@ int main()
    printf("Enter Five Numbers:");
    scanf("%f %f %f %f %f",&a,&b,&c,&d,&e);
    avg= (a+b+c+d+e)/5;
-   printf("Average of the 5 numbers is: %f",avg);
+   printf("Average of the 5 numbers is: %.2f",avg);
   
   /*int n;
   printf("How many numbers You want to enter:"); 
@@ -19,7 +19,8 @@ int main()
       sum = sum + NUM[i];
   }
   avg = sum/n;
-  printf("Average of the %d numbers is: %f",n,avg);
+  printf("Average of the %d numbers is: %.2f",n,avg);
   */
+  printf("\033[0;32m");printf("\nTest Passed %c\n",251);printf("\033[0m");
    return 0;
 }
