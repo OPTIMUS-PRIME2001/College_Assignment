@@ -1,22 +1,22 @@
 /*Q. Write a C Program to find the sum of all integers that lie between 1 and n and are divisible by 7.
 */
 #include<stdio.h>
+#include<stdlib.h>
 void main()
-{   int i, j=0, n, sum=0;
+{   int i, n, size, sum=0;
     printf("\nEnter the value of 'n' :");
     scanf("%d",&n);
-    int NumDiv7[n];
+    size = n/7;
+    int *NumDiv7 = (int*)malloc(size * sizeof(int));
     printf("The multiple of 7 lie between %d and %d:\n",1,n);
-    for(i=1; i<=n; i++)
+    for(i=0; i<=size; i++)
     {   
-        if(i%7==0)
-      { 
-          printf("%d + ",i);
-          NumDiv7[j] = i;
-          j++;
-      }        
+        printf("%d ",i*7);
+        if(i!=size)
+            printf(" + ");
+          NumDiv7[i] = i*7; 
     }
-    for(i=0; i<j; i++)
+    for(i=0; i<=size; i++)
     {
         sum +=NumDiv7[i];
     }
