@@ -46,12 +46,12 @@ void reorderTeam(Cricket P[], int size)
 }
 void main()
 {
-    Cricket Player[36]; 
+    Cricket Player[50]; 
     printf("\nEnter Information of 50 players\n");
-    input_info(Player,36);
-    reorderTeam(Player,36);
+    input_info(Player,50);
+    reorderTeam(Player,50);
     printf("Printing Team Wise: ");
-    for(int i=0,slno=1; i<36; i++)
+    for(int i=0,slno=1; i<50; i++)
     {
         if(i == 0 || strcmp(Player[i].TeamName,Player[i-1].TeamName)!=0)
         {
