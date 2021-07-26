@@ -1,11 +1,11 @@
 /*Q. Write a C Program to illustrate passing of an array of strings(names) to a function.
 */
 #include<stdio.h>
-void stringArrayFunction(char ARR[][20], int size)
+void stringArrayFunction(char ARR[][30], int size)
 {
     for(int i=0;i<size; i++)
     {
-        printf("%s ", ARR[i]);
+        printf("%s \n", ARR[i]);
     }
 }
 void main()
